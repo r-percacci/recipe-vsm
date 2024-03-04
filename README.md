@@ -22,7 +22,8 @@ together with the list of L2 norms of all documents in the index, and the list o
 The provided index was calculated with all 100000 recipes in the reduced dataset.
 
 # How to run
-Download the dataset from https://recipenlg.cs.put.poznan.pl and place it in the same folder as "vsm.py"
+Download the dataset from https://recipenlg.cs.put.poznan.pl and place it in the same folder as "vsm.py".
+The program will ask whether to use existing files (which will not exist yet), or import the dataset. You must choose to import the dataset and specify how many recipes to import. I suggest not importing more than around 100000 recipes.
 
 # Algorithm Structure:
 1. **Setup**:\
