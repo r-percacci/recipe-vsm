@@ -1,5 +1,5 @@
 # recipe-vsm
-Vector Space Model Information Retrieval System 
+**Vector Space Model Information Retrieval System**
 
 This program implements a Vector Space Model IR system. The object is the retrieval of cooking recipes, 
 by searching the RecipeNLG dataset (https://recipenlg.cs.put.poznan.pl/). 
@@ -21,7 +21,10 @@ together with the list of L2 norms of all documents in the index, and the list o
 
 The provided index was calculated with all 100000 recipes in the reduced dataset.
 
-Here is the structure of the algorithm:
+# How to run
+Download the dataset from https://recipenlg.cs.put.poznan.pl and place it in the same folder as "vsm.py"
+
+# Algorithm Structure:
 1. **Setup**:\
     -Import dataset as list of lists of words (one list of words per document) (and dictionary of {DocId: Title} pairs).\
     -Create (or import existing) inverse indices: idf index and tf-idf index.
