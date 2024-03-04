@@ -60,7 +60,7 @@ def import_dataset(max_size):
     titles = {}
 
     # Open the csv file in read mode.
-    with open('mini_dataset.csv', 'r') as f:
+    with open('dataset.csv', 'r') as f:
         # Get stop words and initialize the stemmer.
         stop_words = set(stopwords.words('english'))
         ps = PorterStemmer()
