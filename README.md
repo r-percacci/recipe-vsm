@@ -12,14 +12,10 @@ Instead, data necessary for Cosine Similarity computation is stored in an invers
 stores non null weights. The idea is that, for calculating the scalar product, you only need to know the 
 values of non null terms. 
 
-With more than 2 million recipes, the dataset is too large for the scope of the project. A reduced version,
-with 100000 recipes, is included instead (mini_dataset.csv).
-Moreover, an option is given to only import the first N recipes. 
+With more than 2 million recipes, the dataset is too large for the scope of the project. Therefore, an option is given to only import the first N recipes. 
 
 To avoid re-calculating the index each time (and importing the dataset), you can save the tf-idf index to file, 
 together with the list of L2 norms of all documents in the index, and the list of recipe titles.
-
-The provided index was calculated with all 100000 recipes in the reduced dataset.
 
 # How to run
 Download the dataset from https://recipenlg.cs.put.poznan.pl and place it in the same folder as "vsm.py".
