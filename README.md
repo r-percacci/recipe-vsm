@@ -22,14 +22,14 @@ together with the list of L2 norms of all documents in the index, and the list o
 The provided index was calculated with all 100000 recipes in the reduced dataset.
 
 Here is the structure of the algorithm:
-1. Setup:
-    -Import dataset as list of lists of words (one list of words per document) (and dictionary of {DocId: Title} pairs).
+1. **Setup**:\
+    -Import dataset as list of lists of words (one list of words per document) (and dictionary of {DocId: Title} pairs).\
     -Create (or import existing) inverse indices: idf index and tf-idf index.
-2. Query: 
-    -Iterate over terms in query to compute Cosine Similarity score of all documents using Tf-Idf index.
-    -Return top K scoring documents (K is set to 25).
+2. **Query**:\
+    -Iterate over terms in query to compute Cosine Similarity score of all documents using Tf-Idf index.\
+    -Return top K scoring documents (K is set to 25).\
     -Repeat with new query, go to 3 or end.
-3: Relevance Feedback:
-    -Calculate the centroids of relevant and non-relevant documents.
-    -Create new query with Rocchio formula.
+3. **Relevance Feedback**:\
+    -Calculate the centroids of relevant and non-relevant documents.\
+    -Create new query with Rocchio formula.\
     -Go to step 2.
